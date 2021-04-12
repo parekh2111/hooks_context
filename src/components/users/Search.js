@@ -25,15 +25,10 @@ const Search = ({ searchUsers, showClear, clearUsers, setAlert }) => {
 				<input type="submit" value="Search" className="btn btn-dark btn-block" />
 			</form>
 			{showClear && (
-				<button className="btn btn-light btn-block" onClick={clearUsers}>
-					Clear
-				</button>
-			)}
-
+				<button className="btn btn-light btn-block" onClick={clearUsers}>Clear</button>)}
 		</div>
 	)
 }
-
 Search.propTypes = {
 	searchUsers: PropTypes.func.isRequired,
 	clearUsers: PropTypes.func.isRequired,
