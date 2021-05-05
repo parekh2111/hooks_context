@@ -8,8 +8,7 @@ const Search = () => {
 
   const [text, setText] = useState('');
 
-  const onSubmit = e => {
-    e.preventDefault();
+  const onSubmit = e => { e.preventDefault();
     if (text === '') {
       alertContext.setAlert('Please enter something', 'light');
     } else {
